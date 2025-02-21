@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Jangan lupa nyalain VYN")
+        //JANGAN LUPA TANDA KOMA!
+        //1. Mengakses menggunakan dot
+        const produk = {nama:"Guts sparklens",harga:1000000,stok:15}
+        console.log(produk.nama)//produk=objek, nama,harga,stok=key/properti
+
+        //2. Mengakses menggunakan square bracket
+        const jurus = {nama:"Pukulan tanpa bayangan",'power':10,speed:15}
+        console.log(jurus['power'])
+
+        //3. Mengakses menggunakan object destructuring
+        const ultramantrigger2021={
+            "Nama":"Ultraman Trigger: New Generation Tiga",
+            "Sutradara":"Koichi sakamoto",
+            episode:25
+        }
+        const {Nama, Sutradara, episode}=ultramantrigger2021
+        console.log(Nama,Sutradara,episode)
+
+        const tanahabang ={
+            nama:"Baju",
+            "kategori":"Oversize",
+            stok:10
+        }
+        console.log(tanahabang.nama)
+        console.log(tanahabang["kategori"])
+        const {nama, kategori,stok}=tanahabang
+        console.log(nama, kategori, stok)
+
+        //4. Mengubah Nilai di Properti Object
+        const episodes={
+            total:25,
+            special:4
+        }
+        episodes.special=5
+        console.log(episodes.special)
+        //5. Menghapus properti
+        const form={
+            total:25,
+            final:1,
+            additional:1
+        }
+        delete form.additional
+        console.log(form.additional)
+        // Array
+        const contoharray = [1,2]
+    </script>
+</body>
+</html>

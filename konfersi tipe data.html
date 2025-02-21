@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Konfersi tipe data
+        //1. konfersi string
+        const nomor = 123
+        const nomor2 = 123
+        const bolean = true
+        const stringNumber = String(nomor2)//1
+        console.log(typeof(stringNumber))
+
+        console.log(typeof(String(nomor)))//2
+        console.log(typeof(bolean.toString()))
+
+        //2. konfersi numerik, /** buat komen
+        const strnmbr = "123"
+        const strflt = "3.14"
+        const nmbrbln = true
+        const cm = "10cm"
+
+        const nmbrkestr = Number(strnmbr)
+        const strkeflt = Number(strflt)
+        const nmbrkebln = Number(nmbrbln)
+        const intfromcm = parseInt(cm)
+
+        console.log(typeof(nmbrkestr))
+        console.log(typeof(intfromcm))
+        //3. Konfersi boolean
+        const no = 123
+        const huruf = "abc"
+        const gkada = null
+
+        const nokebolean = Boolean(no)
+        console.log(nokebolean) //kl ada nilai true, kl kosong false
+    </script>
+</body>
+</html>

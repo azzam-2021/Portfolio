@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. Assignment operator
+        let x = 10
+        console.log(x += 5) // x = x + 5
+        console.log(x -= 3) // x = x - 3
+        console.log(x *= 2) // x = x * 2
+        console.log(x /= 4) // x = x / 4
+        console.log(x %= 3) // x = x % 3
+
+        //2. aritmetika operator
+        let a = 10
+        let b = 5
+        console.log(a+b)
+        // increment, tambah satu
+        let z = 3
+        console.log(z++)// blm berubah, masih eksekusi
+        console.log(z)//baru berubah
+        let y = 5
+        console.log(++y)
+        // decrement, kurang satu
+        let c = 3
+        console.log(c--)// blm berubah, masih eksekusi
+        console.log(c)//baru berubah
+        let d = 5
+        console.log(--d)
+        //exponensial / pangkat
+        console.log(2**3)
+        let witches = 10
+        console.log(witches**2)
+        //3. comparison operator
+        //==  membandingkan dua operan, tanpa memperhatikan tipe data. Jika nilai kedua operan dianggap sama, operasi akan mengembalikan true, sebaliknya false.
+        let sacredchant = 10
+        let cover = 15
+        let lornawu = 10
+        let truecrime = "10"
+        let agathathoughtimes = "15"
+        console.log(sacredchant==cover)
+        console.log(sacredchant==truecrime)
+        // != kebalikan yg atas, gk merhatiin tipe data
+        console.log(sacredchant!=cover)
+        console.log(sacredchant!=lornawu)
+        // === identik, Yaitu Membandingkan dua operan beserta tipe datanya. Jika kedua operand identik, operasi akan mengembalikan true, sebaliknya false.
+        console.log(lornawu===agathathoughtimes)
+        console.log(sacredchant===lornawu)
+        //!== operator tdk identik, Yaitu Membandingkan dua operan beserta tipe datanya. Jika kedua operand tidak identik, operasi akan mengembalikan true, sebaliknya false.
+        console.log(lornawu!==truecrime)
+        //operator lebih besar (>) dan kecil (<) Yaitu Membandingkan dua operan, apakah operan pertama lebih dari operan kedua? 
+        let agatha = 10
+        let billy = 5
+        let jennifer = 11
+        console.log(agatha > billy)
+        console.log(agatha < jennifer)
+        console.log(agatha >= billy)// lebih dari sama dengan: 10 lebih dari 5 true/ sama2 10
+        console.log(agatha <= jennifer)// kurang dari sama dengan: 10 kurang dari 11 true/ sama2 11
+        //4. Logical operator
+        //operator and(&&) Yaitu Binary operator yang menghasilkan nilai true apabila kedua operan bernilai true (atau truthy). Jika salah satu operan bernilai false (atau falsy), operasi akan mengembalikan false.
+        console.log((10 % 2 ==0)&&(11 === 11))
+        let seekesthoutheroad = 10+10==20
+        let circlesewnwithfateunlockthyhidengate = 9%2 == 1
+        console.log((seekesthoutheroad)&&(circlesewnwithfateunlockthyhidengate))
+        //operator or(||) Yaitu Binary operator yang menghasilkan nilai true apabila salah satu operan bernilai true (atau truthy)
+        console.log((seekesthoutheroad)||(circlesewnwithfateunlockthyhidengate))
+        //operator NOT(!)Yaitu Unary operator yang mengubah operan bernilai true menjadi false dan false menjadi true.
+        console.log(!seekesthoutheroad)
+        //5. String operator
+        let thoughmanymilesoftricksandtrials = "Agatha "
+        let ificantreachyouletmysongteachyou = "All Along"
+        console.log(thoughmanymilesoftricksandtrials+ificantreachyouletmysongteachyou)
+        let namadepan = "Azzam "
+        let namatengah = "siddiq "
+        let namabelakang = "mutahar"
+        console.log(namadepan+namatengah+namabelakang)
+        console.log(true && false)
+        let road = 10 > 5 && !false
+        console.log(road)
+    </script>
+    <main>
+        <h1>The ballad of the witches road</h1>
+        <h3>Lorna wu version</h3>
+        <p>I have learned the lesson Of all that's foul and fair</p>
+        <p>Our love was forged in fire, Water, Earth, and Air</p>
+        <p>The spell is cast, how long it lasts, I cannot divine</p>
+        <p>The road is there And so I dare To risk this heart of mine</p>
+        <p>Down, down, down the road, Down the Witches' Road</p>
+        <p>Down, down, down the road, Down the Witches' Road</p>
+        <p>Down, down, down the road, Down the Witches' Road</p>
+        <p>Follow me my friends</p>
+        <p>To glory at the end</p>
+        ***
+        <p>I have known the power Of midnights in the wood</p>
+        <p>I've danced inside the circle Of all that's bad and good</p>
+        <p>The dangers grеat, the trials wait For those who seek the prizе</p>
+        <p>Tame your fears, A door appears</p>
+        <p>To love that never dies</p>
+        <p>As we go</p>
+        <p>Down, down, down the road, Down the Witches' Road</p>
+        <p>Down, down, down the road, Down the Witches' Road (Down the Witches' Road)</p>
+        <p>Down, down, down the road, Down the Witches' Road</p>
+        <p>Blood and tears and bone</p>
+        <p>Together and alone</p>
+        ***
+        <p>If i can't reach you, let my song teach you</p>
+        <p>All you need to keep our love alive, If I can't hold you</p>
+        <p>Remember what I told you, It's the only way we survive</p>
+        <p>We survive</p>
+        ***
+        <p>The road is wild and wicked, Winding out of time</p>
+        <p>Still we face our fortune, Chasing the sublime</p>
+        <p>What's lost is found, what's fierce is bound, We're broken and we're burned</p>
+        <p>But take a breath, And dance with death</p>
+        <p>My love cannot be turned</p>
+        <p>As we go</p>
+        ***
+        <p>Down, down, down the road, Down the Witches' Road</p>
+        <p>Down, down, down the road, Down the Witches' Road</p>
+        <p>Down, down, down the road, Down the Witches' Road</p>
+        <p>Down, down, down the road, Down the Witches' Road</p>
+        <p>Down, down, down the road, Down the Witches' Road</p>
+        <p>Down, down, down the road, Down the Witches' Road</p>
+        <p>Wherever it may bend</p>
+        <p>I'll see you at the end</p>
+        <p>I'll see you at the end</p>
+        <p>I'll see you at the end</p>
+        <p>I'll see you at the end</p>
+        <p>I'll see you at the end</p>
+    </main>
+</body>
+</html>

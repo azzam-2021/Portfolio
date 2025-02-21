@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Mengembalikan nilai di sebelah kiri jika nilainya bukan null atau undefined. 
+        //Jika nilainya null atau undefined, maka operator ini akan mengembalikan nilai di sebelah kanan.
+
+        //coven bernilai null, sehingga witchcraft akan diisi dengan nilai "Guest".
+        let coven = null
+        let witchcraft = coven ?? "Coven true"
+        console.log(witchcraft)
+        //1. Perbandingan dengan ||
+        /**Operator || sering digunakan untuk memberikan nilai default. Namun, operator || tidak hanya memeriksa null atau undefined, tetapi juga nilai falsy seperti:**/
+        /** perbedaan
+         * ?? hanya memeriksa null dan undefined.
+        || memeriksa semua nilai falsy.**/
+        let familiarbythyside = 1
+        let deathshandinmine = familiarbythyside || "I stray not from the path"
+        console.log(deathshandinmine)
+        //2. Prioritas
+        //Operator ?? memiliki prioritas yang lebih rendah dibandingkan operator = (assignment), tetapi lebih tinggi dari sebagian besar operator logika lainnya, seperti || atau &&.
+        let followmemyfriends = null || (undefined ?? "I hold deaths hand in mine")
+        console.log(followmemyfriends)
+        //3. Menggunakan ?? dengan && atau ||
+        let gathersisters = null
+        let firewaterearthandair = true
+        let bloodandtearsandbone = familiarbythyside && (gathersisters ?? "Coven")
+        console.log(bloodandtearsandbone)
+
+        let islogin = true
+        let status = islogin ?? "Active"
+        console.log(status)
+        //tugas
+        let username = null
+        let nickname = null
+        let hasil = username ?? nickname ?? ("Anonymous")
+        console.log(hasil)
+
+        let price = null
+        let hargabarang = price ?? 100
+        console.log(hargabarang)
+
+        let isloggedin = null
+        let hasilA = "Guest"
+        let hasilB = "User"
+        let hasil2 = isloggedin ?? hasilA
+        if(isloggedin = true) {
+            console.log(hasilB)
+        }
+        console.log(hasil2)
+    </script>
+</body>
+</html>

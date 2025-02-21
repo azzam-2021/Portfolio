@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Jangan lupa nyalain veyon!")
+        //Set gk bisa nyimpen 2/lebih data yg sama
+        const multiType = new Set(["Zepperion beam","Multi sword"])
+        multiType.add("Balance")
+        console.log(multiType)
+
+        const data = new Set([])
+        data.add("Multi type")
+        data.add("Power type")
+        data.add("Sky type")
+        data.add("Glitter trigger eternity")
+        data.add("Trigger truth")
+        console.log(data)
+        //Mengakses nilai set(pake loop[for of]&foreach)
+        for (const element of data) {
+            console.log(element)
+        }
+        const Giantofdarkness = new Set([])
+        Giantofdarkness.add("Carmeara")
+        Giantofdarkness.add("Hudram")
+        Giantofdarkness.add("Dargon")
+        Giantofdarkness.add("Trigger dark")
+        Giantofdarkness.forEach((nilai)=>console.log(nilai))
+
+        //Menghapus nilai set
+        const Giantofdarknesstiga = new Set([])
+        Giantofdarknesstiga.add("Cameara")
+        Giantofdarknesstiga.add("Hudra")
+        Giantofdarknesstiga.add("Darramb")
+        Giantofdarknesstiga.add("Dark tiga")
+        Giantofdarknesstiga.delete("Cameara")
+        Giantofdarknesstiga.forEach((nilai)=>console.log(nilai))
+    </script>
+</body>
+</html>

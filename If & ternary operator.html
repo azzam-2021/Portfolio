@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. If statement
+        /**if (Kondisi) {
+         * kode yg dijalananin kl kondisinya true
+         * } else{
+         * kode yg dijalananin kl kondisinya false}**/
+        const umur = 17
+        if(umur >= 18) {
+            console.log("Kau sudah dewasa")
+        }else{
+            console.log("Kau belum dewasa")
+        }
+
+        const no = 9
+        if(no % 2 === 0){
+            console.log("Bilangan genap")
+        }else{
+            console.log("Bilangan ganjil")
+        }
+        let input=prompt("Masukan nilai")
+        let number = parseInt(input)
+        if(isNaN(number)){
+            alert("Ini bukan angka")
+        }else{
+            alert("Ini baru angka")
+        }
+        //3. Else if
+        let nilai = 90
+        if(nilai >=  90){
+            console.log("Nilai A")
+            document.write("Nilai A")
+        }
+        else if(nilai >= 80){
+            console.log("Nilai B")
+        }
+        else if(nilai >= 70){
+            console.log("Nilai C")
+        }
+        else{
+            console.log("Nilai D")
+        }
+        //4. Konfersi boolean
+        let nama = ""
+        if(nama){
+            console.log("Nama ada")
+        }
+        else{
+            console.log("Nama gk ada")
+        }
+        //5. Operator kondisional/ternary (?)
+        let usia = 20
+        let darkesthourwakethypower = usia >=17 ? "Udah dewasa":"Udah dewasa"
+        console.log(darkesthourwakethypower)
+        //6. Multiple ? ?
+        let unlockthyhidengate = 80
+        let billymaximmof = unlockthyhidengate >= 80 ? "B" : unlockthyhidengate >= 90 ? "A" : "C"
+        console.log(billymaximmof)
+        //7. Penggunaan ‘?’ yang Non-Tradisional
+        let warna = "Merah"
+        console.log(warna==="Merah" ? "Berhenti":"Jalan")
+        //tugas 5
+        console.log(10 > 5 ? "Benar" : "Salah")
+        console.log(5 > 3 ? 5 > 2 ? "A" : "B" : "C")
+
+        let tertulis = 80
+        let proyek = 70
+        if (tertulis >= 70){
+            console.log("Lulus")
+        }
+        else{
+            console.log("Tidak lulus")
+        }
+        if (proyek >= 60){
+            console.log("Lulus")
+        }
+        else{
+            console.log("Tidak lulus")
+        }
+
+        let umur1 = 10
+        if (umur1 <12) {
+            console.log("Tidak bisa daftar")
+        }
+        else if (umur1 <=15) {
+            console.log("Daftar harus izin orang tua")
+        }
+        else{
+            console.log("Daftar tanpa syarat")
+        }
+    </script>
+    <main>
+        <h1>The ballad of the witches road</h1>
+        <h3>Agatha though times version</h3>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Circle sewn with fate</p>
+        <p>Unlock thy hidden gate</p>
+        ***
+        <p>Merching ever forward neeth the wooden shrine</p>
+        <p>I stray not from the path, i hold death's hand in mine</p>
+        <p>Primal night, given sight, familiar by thy side</p>
+        <p>If one be gone we carry on</p>
+        <p>spirit as our guide</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Blood and tears and bone</p>
+        <p>Maiden, mother, crone</p>
+        ***
+        <p>The road is wild and wicked, wilding to the wood</p>
+        <p>Where all there's wrong is right and all there's all bad is good</p>
+        <p>Though many miles of tricks and trials, we'll wonder high and low</p>
+        <p>Tame your fear and doors appears, the time has come to go</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Follow me my friends</p>
+        <p>To glory and the end</p>
+        <b>Agatha harkness, Jennifer kale, Lilia calderou, Alice wu, Mrs. hart</b>
+    </main>
+</body>
+</html>

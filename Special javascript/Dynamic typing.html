@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let teks = "Yuna shizuma"
+        let angka = 2021
+        let BenarSalah = true
+        console.log(typeof(teks))
+        console.log(typeof(angka))
+        console.log(typeof(BenarSalah))
+
+        //Tugas
+        var input  = prompt('Tebak angka(7)')
+        if(input==7){
+            alert("Jawaban anda benar")
+        }
+        else{alert("Maaf jawaban anda salah")}
+
+        var GanjilGenap =prompt("Angka ganjil/genap")
+        if(GanjilGenap % 2 == 0){
+            alert("Angka yang Anda masukkan adalah genap")
+        }
+        else{
+            alert("Angka yang Anda masukkan adalah ganjil")
+        }
+
+        var Username = prompt("Username")
+        if(Username == "Admin"){
+            alert("Lanjut")
+        }
+        else{
+            alert("Username atau password salah")
+        }
+        var password = prompt("Password")
+        if(password == 12345){
+            alert("Login berhasil")
+        }
+        else{
+            alert("Username atau password salah")
+        }
+    </script>
+</body>
+</html>

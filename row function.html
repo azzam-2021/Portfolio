@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function biasa
+        function abc(tulisan){
+            return "Halo "+tulisan
+        }
+        console.log(abc("Agnes"))
+        //---------------------------
+        //function expression
+        const abc2 = function(text){
+            return "Hey guys "+text
+        }
+        console.log(abc2("i heard you have a party"))
+    //----------------------------------------------------------------
+        //Arrow function
+        const abc3 = (teks)=>{
+            return "You much like your "+teks
+        }
+        console.log(abc3("mother"))
+
+        const konversicelciusfahrenheit =(temperatur)=>{
+            return 9/5 * temperatur + 32
+        }//ini udh refactor
+        console.log(konversicelciusfahrenheit(90))
+
+        //Refactor
+        const konversicelciusfahrenheit2 =(temperatur2)=>
+             9/5 * temperatur2 + 32
+        //ini udh refactor
+        console.log(konversicelciusfahrenheit2(1000))//gk pake {} & return
+
+        const teks = (teks)=>
+             "She took every little bit of power i had, "+teks
+        
+        console.log(teks("I'm assembling a coven"))
+
+        const luaspersegipanjang = (panjang, lebar)=>
+             panjang*lebar
+        console.log(luaspersegipanjang(5,2))
+        confirm("Apakah anda ingin ke witches road?")
+
+        //Tugas,harga X 0,?(diskonya)(rumus diskon)
+        //1
+        const multiply = (a, b) => a * b; console.log(multiply(4, 5));
+        //2
+        const tulisanbudi = () => 
+            "Halo, dunia"
+        console.log(tulisanbudi())
+        
+        //3
+        const hitungdiskon = (harga)=>{
+            if(harga > 100000){
+                return harga*0.2
+            }
+            else{
+                return harga
+            }
+        }
+        console.log(hitungdiskon(120000))
+        //3
+        const luaspersegipanjang2 = (panjang, lebar)=>
+             panjang*lebar
+        console.log(luaspersegipanjang2(5,2))
+        //4
+        const greet = name => "Hello, ${name}!";
+        console.log(greet("Andi"));
+        //4
+        const andi = (nama)=>
+            "Halo, "+nama
+        console.log(andi("Kengo"))
+    </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+        }
+        .satu{
+            width: 50%;
+        }
+        .dua{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //variabel const & let
+        const pi = 3.14 //gak bisa diubah (3.14= value)
+            //pi = 10 ini gk bisa
+        console.log(pi)
+        let nama = "Jane doe" //bisa dirubah
+            nama = "Agnes o connors"
+        console.log(nama)
+        //Aturan Penamaan Variabel
+        //Unik: Nama variabel harus unik dalam satu scope.
+        //Karakter: Hanya boleh menggunakan huruf, angka, underscore (_), dan dolar ($).
+        //Awalan: Tidak boleh diawali dengan angka.
+        //Case-sensitive: JavaScript membedakan huruf besar dan kecil (contoh: nama berbeda dengan Nama).
+        
+        //penamaan variabel
+        let nama_1 = "Agatha harkness" // pake underscore
+        let namaDua = "Rio vidal" //kalo dua kata, kata kedua pake huruf besar
+        let nama3 = "Jennifer kale" //Awalnya jangan angka
+
+        //deklarasi ulang
+        let contoh = "Lilia calderou"
+            contoh = "Jenifer kale" // bisa diubah tapi gk bisa deklarasi ulang
+        //let contoh = "agatha" // ini gk bisa
+        // var, bisa semuanya
+//Best Practices
+//Gunakan const sebisa mungkin: Ini membantu menghindari kesalahan yang tidak disengaja karena nilai variabel tidak akan berubah.
+//Gunakan let hanya ketika nilai variabel perlu diubah.
+//Berikan nama variabel yang deskriptif: Nama variabel yang baik membuat kode lebih mudah dibaca dan dipahami
+
+//tipe data
+        //1. string, tulisan, pake petik satu ' atau dua "
+        let string = "Agnes o' connors"
+        console.log(typeof(string)) //typeof buat ngecek
+        //2. number, angka, bilangan bulat/desimal bisa buat operasi hitung
+        let number = 241224
+            number2 = 100
+        console.log(typeof(number))
+        console.log(number+number2)
+        //3. Boolean, cuma bisa true/false
+        let apakah_Agatha_benciRio = true
+        let c1 = 1
+            c2 = 2
+        console.log(c1==c2) //kl ada perbandingan, true kl nilai sama, false kl beda
+        //4. Null, kosong
+        let a = null
+        console.log(a)
+        //5. Undefined, variabel gk ada nilainya
+        let kosong
+        console.log(kosong)
+        //6. Bigint, buat angka yg gede, kl dicek tetep number
+        let agatha = 999999
+        console.log(typeof(agatha))
+        //variabel kompleks
+        //1. Array, nilai berurut dari 0, dimulai dengan kurung siku[]
+        //const karakter = "Agatha", "Jennifer" //gak bisa lebih dari satu
+        const karakter = ["Agatha","Jennifer","Lilia","Alice","Rio","Wiccan/Billy"]
+        console.log(typeof(karakter))
+        console.log(karakter)
+        console.log(karakter[3])
+        //2. Object
+        const saya  ={ //saya=objek variabel, nama=key, agnes=value
+            nama: "Agnes",
+            umur: 51,
+            pekerjaan: "Detektif"
+        }
+        console.log(saya)
+        console.log(saya.pekerjaan) //objek variabel.key
+
+        //tugas
+        //nyambut pengguna
+        let namaPengguna = "Budi"
+        console.log("Halo, "+namaPengguna+"!")
+        //ngitung luas lingkaran
+        let radius = 10
+        let luas = 3.14*radius*radius
+        //cuma nyoba
+        console.log(luas)
+        let panjang = 20
+        let lebar = 10
+        console.log(panjang*lebar)
+        //meriksa umur
+        let umur = 13
+        let udahDewasa = umur >=18
+        console.log("udah dewasa?"+udahDewasa)
+    </script>
+    <div class="satu">
+        <h1>The ballad of the witches road</h1>
+        <h3>Sacred chant version</h3>
+        <p>Seekest thou the road to all thats foul and fair</p>
+        <p>Gather sisters fire, water, earth and air</p>
+        <p>Darkest hour, wake thy power, earthly and divine</p>
+        <p>Burn and brew with coven true and glory shall be thine</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Circle sewn with fate</p>
+        <p>Unlock thy hidden gate</p>
+        ***
+        <p>Merching ever forward neeth the wooden shrine</p>
+        <p>I stray not from the path, i hold death's hand in mine</p>
+        <p>Primal night, given sight, familiar by thy side</p>
+        <p>If one be gone we carry on</p>
+        <p>spirit as our guide</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Blood and tears and bone</p>
+        <p>Maiden, mother, crone</p>
+        ***
+        <p>The road is wild and wicked, wilding to the wood</p>
+        <p>Where all there's wrong is right and all there's all bad is good</p>
+        <p>Though many miles of tricks and trials, we'll wonder high and low</p>
+        <p>Tame your fear and doors appears, the time has come to go</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Down, down, down the road, down the witches road</p>
+        <p>Follow me my friends</p>
+        <p>To glory and the end</p>
+        <b>Agatha harkness, Jennifer kale, Lilia calderou, Alice wu, Mrs. hart</b>
+    </div>
+    <div class="dua">
+        <h1>Quotes</h1>
+        <p>"She took every bit of power i had" -Agatha harkness-</p>
+        <p>"We gonna back on top" -Agatha harkness-</p>
+        <p>"I gonna walk the road" -Agatha harkness-</p>
+        <p>"Join me!" -Agatha harkness-</p>
+        <p>"The road is a deathwish" -Lilia calderou-</p>
+        <p>"The witches road would give you the thing you want most, if you make it to the end" -Wiccan/Billy-</p>
+        <p>"Hey guys, i heard you have a party" -Rio vidal/Death</p>
+        <p>"Hey, yo, whats up?" -Coven-</p>
+        <p>"Shall we?" -Agatha harkness-</p>
+        <p>"It will test us about our knowledge of the craft" -Lilia calderou-</p>
+        <p>"How do we pass this trials without any power?" -Jennifer kale-</p>
+        <p>"We survive as witch has been doing for centuries" -Agatha harkness-</p>
+        <p>"What happens next?" -Rio vidal/Death-</p>
+        <p>"I need this witches to make me to the end" -Agatha harkness-</p>
+        <p>"The bodies has really pilling up" -Rio vidal/Death</p>
+        <p>"I WANT MY PRIZE!!" -Agatha harkness-</p>
+        <p>"Time to finish the road!" -Jennifer kale-</p>
+        <p>"Last one there's a nice person" -Agatha harkness-</p>
+    </div>
+</body>
+</html>

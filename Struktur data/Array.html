@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Jangan lupa nyalain VYN!")
+        // Array, urutan dimulai dari 0
+        const contoharray = [true,2,"Trigger"]
+        console.log(typeof(contoharray))
+        console.log(contoharray[1])
+
+        //Object constructor
+        const array2 = new Array()
+        const array3 = []//bukan constructor
+        console.log(array2)
+        console.log(array3)//bukan constructor
+        //Array.from
+        const user = new Array("Carmeara","Hudram","Dargon","Trigger dark")
+        const customer = Array.from(user)
+        console.log(customer)
+
+        const customer2 = Array.from("Abudzar")
+        console.log(customer2)
+        console.log(customer2[2])
+
+        //Array literal
+        const contoharray2 = [true,25,"Guts select"]
+        console.log(contoharray2[1])
+
+        //Manipulasi nilai array
+        const EpisodesArc1 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+        EpisodesArc1[8]=1000
+        EpisodesArc1[9]="Multy type"
+        console.log(EpisodesArc1)
+            //Push
+        const EpisodesArc2 = [14,15,16,17,18,19,20,21,22,23,24]
+        EpisodesArc2.push(25)
+        console.log(EpisodesArc2)
+        //Coba tugas
+        const ekskuladz = ["Taekwondo","Panahan","Berkuda","Berenang"]
+        ekskuladz.push("Futsal")
+        console.log(ekskuladz)
+
+        const ekskulygmauadz = ["IT","Nonton","Nembak","Gak ada"]
+        ekskulygmauadz.push("Mengemudi")
+        console.log(ekskulygmauadz)
+
+        //Ngapus element dan data array
+        const jpkls6 = ["Ips","Ipa","Bahasa indonesia","PAI"]
+        delete jpkls6[2]
+        console.log(jpkls6)
+        //Splice
+        const jpkls62 = ["Ips","Ipa","Bahasa indonesia","Ict"]
+        jpkls62.splice(1,2)
+        console.log(jpkls62)
+
+        //Shift & pop
+        const jpkls63 = ["Sbdp","English","Bahasa indonesia","Ict"]
+        jpkls63.shift(2)//shift
+        jpkls63.pop(3)//Pop
+
+        //Array Destructuring
+        const JuriMasterChefIndonesiaS8 = ["Arnold poernomo","Juna rorimpadey","Renatta moeloek"]
+        const [Juri1,Juri2,Juri3]=JuriMasterChefIndonesiaS8
+        console.log(Juri1)
+
+        const makanan = ["Bakso","Soto","Nasi goreng"]
+        const [sarapan,makansiang,makanmalam]=makanan
+        console.log("Pagi hari ini sarapanya sama "+sarapan+" siang makan sama "+makansiang+" malem makan sama"+makanmalam)
+
+        //Array method
+        //1. Reverse
+        const Gutsselect =[
+            "Seiya tatsumi",
+            "Tesshin sakuma",
+            "Himari nanase",
+            "Akito hijiri",
+            "Kengo manaka",
+            "Yuna shizuma"
+        ]
+        Gutsselect.reverse()
+        console.log(Gutsselect)
+        
+        //2. Sort
+        const karakter =[
+            "Ultraman trigger",
+            "Carmeara",
+            "Hudram",
+            "Dargon",
+            "Trigger dark",
+            "Ultraman z",
+            "Ultraman ribut"
+        ]
+        karakter.sort()
+        console.log(karakter)
+    </script>
+</body>

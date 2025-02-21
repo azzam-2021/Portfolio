@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1 parameter bisa lebih dari 1 nilai/argumen
+        function fungsi(nama){
+            console.log("Apalah "+nama)
+        }
+        fungsi("Fatih")// satu parameter cuma buat 1 nilai
+
+        function Kampungjawara(...jawara){
+            console.log(jawara)
+        }
+        Kampungjawara("Babe agi", "Mang oni","Mak siti")
+
+        function Kampungjawara2(jawara1,...jawara){
+            console.log(jawara1, jawara)
+        }
+        Kampungjawara2("Babe agi", "Mang oni","Mak siti")
+
+        function contoh(nama,...abujar){
+            console.log(nama,abujar)
+        }
+        contoh("Keanu abidzar","Pondok","abu jar")
+
+        const aray=[1,2,3,4,5]
+        console.log(aray.length)
+
+        function Kampungjawara2(jawara1,...jawara){
+            console.log(jawara1, jawara.length)
+        }
+        Kampungjawara2("Babe agi", "Mang oni","Mak siti")
+
+        const jawara=[
+            "Babe agi",
+            "Abah oni",
+            "Mak siti",
+            "Sabeni",
+        ]
+        const [jawara0,jawara2,...jawara3]=jawara
+        console.log(jawara0)
+        console.log(jawara2)
+        console.log(jawara3)
+
+        function nomor(...no){
+            return no.reduce((total, num)=> total+num,0)
+        }
+        console.log(nomor(1,2,3,4,5))
+
+        //Tugas
+        const mySet = new Set([1, 2, 2, 3, 4]);
+        console.log(mySet.size);
+
+        const arr1 = [1, 2, 3];
+        const arr2 = [...arr1, 4, 5];
+        console.log(arr2);  
+
+        const nilaiamir=[80,90,85,95]
+        console.log(nilaiamir[2])
+
+        const dika = { name: "Dika", age: 21, city: "Jakarta",hobby:"membaca" }
+        console.log(dika)
+
+        const fruits1=["Apple","Banana"]
+        const fruits2=["Orange","Grape"]
+        const allfruits=[...fruits1,...fruits2]
+        console.log(allfruits)
+
+        const nilai2 = new Set([90,85,85,95,90])
+        console.log(nilai2.size)
+
+        function noterakhir(...no){
+            return no.reduce((total, num)=> total+num,0)
+        }
+        console.log(noterakhir(15,20,35,50,10))
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="ucapan()">aaaa</button>
+    <button onclick="coventrue()">Tombol</button>
+    <script>
+        //Function
+        function ucapan(){
+            console.log("Hello ladies and gantlemen")
+        }
+        function coventrue(){
+            document.writeln("hey yo whats up assalamualaikum")
+        }
+        function convertcelciusfahrenheit(temperature){
+            const celciusfahrenheit= 9/5 * temperature + 32
+            console.log("Hasil konversi celcius ke fahrenheit "+celciusfahrenheit)
+        }//parameter bisa punya nilai default (=isi apa aja)
+        convertcelciusfahrenheit(20)
+        const p = 90
+        convertcelciusfahrenheit(p)
+
+        function luaspersegipanjang(panjang,lebar){
+            const luas = panjang*lebar
+            console.log("Luas persegi panjang adalah "+luas)
+        }
+        luaspersegipanjang(5,10)//bisa nilai langsung di parameter/pake variabel baru
+
+        function perkenalan (nama) {
+        nama = nama || "Anonim";
+        console.log("Halo, " + nama);
+        }
+        perkenalan();
+        perkenalan ("Agatha");
+
+        //Return
+        function kembali(a, b){
+            return a+b
+        }// di return a+b, bakal gitu terus, bisa dirubah + nya jadi yg lain
+        let hasil = kembali(3, 2)
+        console.log(hasil)
+        console.log(kembali(10, 5))
+
+        //Tugas
+        function cekkelulusan (nilai) {
+        if (nilai >= 70) {
+        return "Lulus";
+        } else {
+        return "Tidak Lulus"
+        }
+        }
+        console.log(cekkelulusan (75))
+        
+        function sum(a, b) {
+        return a + b;
+        }
+        console.log(sum(5));
+        const multiply = function (x, y) {
+        return x * y;
+        };
+        console.log(multiply(3, 4));
+
+        function sayHello() {
+        console.log("Hello!");
+        }
+        console.log(sayHello());
+
+        function cekumur(usia){
+            if(usia >= 18){
+                return "Selamat, anda bisa mendaftar"
+            } else if(usia < 18){
+                return "Maaf, anda tidak bisa mendaftar"
+            }else{
+                return "Error"
+            }
+        }
+        console.log(cekumur(18))
+
+        function konversinilai(nilai2){
+            if(nilai2 < 60){
+                return "E"
+            }
+            else if(nilai2 < 70){
+                return "D"
+            }
+            else if(nilai2 < 80){
+                return "C"
+            }
+            else if(nilai2 < 90){
+                return "B"
+            }
+            else if(nilai2 < 100){
+                return "A"
+            }
+        }
+        console.log(konversinilai(98))
+        
+    </script>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/R9pXbNz6Vbw?si=zA5M0LVv_GXeHu3V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+</body>
+</html>

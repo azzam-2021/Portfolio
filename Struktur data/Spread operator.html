@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Object
+        const objek1 = {Nama:"Ultraman trigger"}
+        const objek2 ={
+            Tanggal_rilis: "July 10 2021",
+            Jumlah_episode: 25
+        }
+        const objekbaru ={...objek1,...objek2}
+        console.log(objekbaru)
+
+        const ttl ={Ttl:"Konohagakure 11 september 2011"}
+        const namaortu={Ayah:"Naruto uzumaki",Ibu:"Hinata hyuga"}
+        const datadiri={...ttl,...namaortu}
+        console.log(datadiri)
+
+        //Array
+        const array1 =["Mci8"]
+        const array2=[
+            "Jesselyn lawren",
+            "Nadya putri"
+        ]
+        const array3=[...array1,...array2]
+        console.log(array3)
+    </script>
+</body>
+</html>

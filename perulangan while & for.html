@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //1. While
+         while(false){
+             console.log("#1 Seekest thou the road")
+         }// kl nilainya true jadi "Infinity loop"
+         /*let ulang = 1
+         while(expresion){
+             console.log("#2 Circle sewn with fate, unlock thy hiden gate")
+             ulang++ (increment)
+         }*/
+         let ulang = 1
+         while(ulang <= 10){
+             console.log("#2 Circle sewn with fate, unlock thy hiden gate") //+"yg ke" + ulang
+             ulang++
+         }
+
+         let ulangA = 1
+         while(ulangA <= 10){
+             console.log("Santri ke "+ulangA)
+             ulangA++
+         }
+         //1. do while
+         let ulang2 = 1
+         do{
+             console.log("#3 Though many miles of tricks and trials")
+             ulang2++
+         }while(ulang2 <= 5)
+        
+         let ulang2A = 1
+         do{
+             console.log("#3 Though many miles of tricks and trials"+ ulang2A)
+             ulang2A++
+         }while(ulang2A <= 5)
+
+        let asrama = 1;
+
+        while (asrama <= 5){
+            console.log("asrama terbaik no-" + asrama);
+            asrama++;
+        } do {
+            console.log("asrama terburuk no-" + asrama);
+            asrama++;
+        } while ((asrama >= 6) && (asrama <= 10));
+        //--------------------------------------------------------
+        //For
+        //1. for loop
+        let westview = 1
+        for(westview; westview <= 10; westview++){
+            console.log("#If i cant reach you, let my song teach you")
+        }
+
+        let sigil = 1
+        for(sigil; sigil <= 5; sigil++){
+            console.log("Asrama ke "+sigil+" terbaik")
+        }if((sigil >1)&&(sigil <5)){
+            console.log("Asrama ke "+sigil+" terbaik dan bagus")
+        }
+
+        let angkot = 1
+        for(angkot; angkot <= 15; angkot++){
+            if(angkot === 7){
+                console.log("Angkot "+angkot+" rusak")
+            }else if(angkot === 9){
+                console.log("Angkot "+angkot+" rusak")
+            }else{
+                console.log("Angkot "+angkot+" beroprasi dgn baik")
+            }
+        }
+        //2. For in utk objek
+        const person = {nama:"Agatha", asal:"Inggris", umur:380}//objek
+        for(let properti in person){
+            console.log(properti+" "+person[properti])//properti.nama/asal/umur kl mau munculin salah satunya doang
+        }//properti=key
+        const data = {name:"Lilia", from:"Sicilia", umur:450}
+        for(let kunci in data){
+            console.log(kunci+" "+data[kunci])
+        }
+        //3. For of
+        const coven = ["Agatha", "Billy", "Lilia", "Jennifer", "Alice", "Rio"]//array
+        for(const items of coven){
+            console.log(coven[2])
+        }
+        //----------------------------------------------------------------
+        //Break
+        for(let x = 1; x <= 10; x++){
+            if(x===5){
+                break
+            }
+            console.log(x)
+        }
+        //
+        for(let y=1; y <= 10; y++){
+            if(y===9){
+                break
+            }
+            else if(y % 2 === 1){
+                console.log(y+" bilangan ganjil")
+            }
+            continue
+        }
+        //tugas
+        let angka = 1
+        for(angka; angka <= 100; angka++){
+            console.log(angka)
+        }
+        let ix = 1
+        for(ix; ix <= 12; ix++){
+            if(ix===8){
+                continue
+            }
+            console.log(ix)
+        }
+        for (let i = 0; i < 5; i++) {
+        if (i === 3) break;
+        console.log(i);
+        }
+        let i = 1;
+        do {
+        console.log(i);
+        i++;
+        } while (i < 4);
+        for (let i = 1; i <= 3; i++) {
+        for (let j = 1; j <= 2; j++) {
+        console.log(i, j);
+            }
+        }
+        let iv = 0;
+        while (iv < 3) { console.log(iv); iv++; }
+        
+        let ember = 1
+        while (ember <= 10) {
+            console.log("Ember "+ember+" telah terisi")
+            ember++
+        }
+        for (let iw = 0; iw < 5; iw++) {
+        if (iw === 2) continue;
+        console.log(iw);
+        }
+    </script>
+</body>
+</html>

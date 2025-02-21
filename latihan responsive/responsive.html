@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav class="menu">
+            <ul class="link">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="humburger">
+            <i class="fi fi-br-menu-burger"></i>
+        </button>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    </header>
+    <section class="hero">
+        <div class="img-hero">
+            <img src="img/poster.png" alt="">
+        </div>
+        <div class="hero-content">
+            <h1>Your name</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sed! Corporis suscipit quos, harum culpa, beatae mollitia, excepturi nulla repellendus dolore et at ab in similique iure ipsam dolorem sapiente?</p>
+            <a href="">Tombol</a>
+        </div>
+    </section>
+    <script>
+        const humberger = document.querySelector('.humburger')
+        const menu = document.querySelector('.menu')
+        humberger.addEventListener('click', () =>{
+            menu.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
