@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(10 + "5")
+
+        console.log(5 == "5")
+
+        let day = 2;
+        switch (day) {
+        case 1: console.log("Senin");
+        break;
+        case 2: console.log("Selasa");
+        break;
+        default: console.log("Hari lainnya");
+        }
+
+        let x = 2;
+        if (x > 5) { console.log("Besar");
+        }
+
+        let a = null ?? "default";
+        console.log(a);
+
+        console.log(0 ? "Yes" : "No");
+
+        let x2 = 10;
+        let result = (x2 > 5) ? "Besar" : "Kecil"; console.log(result);  
+
+        let i = 3;
+        while (i > 0) {
+            console.log(i);
+        i--;
+        }  
+
+        //for (;;) {
+        //console.log("Hello");
+        //}  
+
+        const sum = (a, b) => a + b;
+        console.log(sum(2, 3));  
+
+        let arr = [1, 2, 3];
+        arr.push(4);
+        console.log(arr); 
+
+        console.log(typeof null);
+
+        console.log([] == false);
+
+        let x3;
+        console.log(x3 ?? "Default Value");
+
+        //Praktek
+        let nilai = 0
+        if(nilai > 89){
+            console.log("A")
+        }else if(nilai > 80){
+            console.log("B")
+        }else if(nilai > 70){
+            console.log("C")
+        }else if(nilai > 60){
+            console.log("D")
+        }
+        else if(nilai < 60){
+            console.log("E")
+        }
+
+        let username = prompt("Masukan username")
+        let password = parseInt(prompt("Masukan password"))
+        if(username === "admin"){
+        }else{alert("Login gagal")}
+        if (password == 12345){
+            alert("Login berhasil")
+        }else{alert("Login gagal")}
+
+        function login(username2,password2) {
+            username2 = prompt("Masukan username 2")
+            password2 = parseInt(prompt("Masukan password 2"))
+            if(username2 === "admin"){
+            }else{alert("Login gagal")}
+            if(password2 == 12345){
+                alert("Login berhasil")
+            }
+            else{alert("Login gagal")}
+        }
+        login()
+    </script>
+</body>
+</html>

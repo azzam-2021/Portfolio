@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Tugas 14.css">
+</head>
+<body>
+    <script>
+        function looping(){
+            for(let a=1; a <= 10;a++ ){
+                alert("Loop1 ke "+a)
+            }
+        }
+        function looping2(){
+            for(let a=1; a <= 10;a++ ){
+                alert("Loop2 ke "+a)
+            }
+        }
+        function looping3(){
+            for(let a=1; a <= 10;a++ ){
+                alert("Loop3 ke "+a)
+            }
+        }
+        function hitung(angka1, angka2){
+            angka1 = parseInt(prompt("masukan angka ke 1")) 
+            angka2 = parseInt(prompt("masukan angka ke 2")) 
+            alert(angka1+angka2)
+        }
+    </script>
+    <button onclick="alert('Ultraman trigger, multy type, boots up, zepperion')">Tombol trigger</button>
+    <button class="b2">Tombol 2</button>
+    <div>
+        <button onclick="looping()" class="loop1">Tombol loop 1</button>
+        <button onclick="looping2()" class="loop2">Tombol loop 2</button>
+        <button onclick="looping3()" class="loop3">Tombol loop 3</button>
+        <button onclick="alert('Boots up, dark zepperion')" class="b3">Klik Aku</button>
+        <button onclick="hitung()" class="hitung">Hitung aku!</button>
+    </div>
+</body>
+</html>
